@@ -1,65 +1,83 @@
 :root {
-  --sx-color-primary: #6750a4;
+  /* Primary colors - blue based */
+  --sx-color-primary: #3b82f6; /* Tailwind blue-500 */
   --sx-color-on-primary: #fff;
-  --sx-color-primary-container: #eaddff;
-  --sx-color-on-primary-container: #21005e;
-  --sx-color-secondary: #625b71;
+  --sx-color-primary-container: #dbeafe; /* Tailwind blue-100 */
+  --sx-color-on-primary-container: #1e3a8a; /* Tailwind blue-900 */
+  
+  /* Secondary colors - slate/gray based */
+  --sx-color-secondary: #64748b; /* Tailwind slate-500 */
   --sx-color-on-secondary: #fff;
-  --sx-color-secondary-container: #e8def8;
-  --sx-color-on-secondary-container: #1e192b;
-  --sx-color-tertiary: #7d5260;
+  --sx-color-secondary-container: #f1f5f9; /* Tailwind slate-100 */
+  --sx-color-on-secondary-container: #0f172a; /* Tailwind slate-900 */
+  
+  /* Tertiary colors - indigo based */
+  --sx-color-tertiary: #6366f1; /* Tailwind indigo-500 */
   --sx-color-on-tertiary: #fff;
-  --sx-color-tertiary-container: #ffd8e4;
-  --sx-color-on-tertiary-container: #370b1e;
-  --sx-color-surface: #fef7ff;
-  --sx-color-surface-dim: #ded8e1;
-  --sx-color-surface-bright: #fef7ff;
-  --sx-color-on-surface: #1c1b1f;
-  --sx-color-surface-container: #f3edf7;
-  --sx-color-surface-container-low: #f7f2fa;
-  --sx-color-surface-container-high: #ece6f0;
-  --sx-color-background: #fff; // deviation from material 3, which would be #FEF7FF
-  --sx-color-on-background: #1c1b1f;
-  --sx-color-outline: #79747e;
-  --sx-color-outline-variant: #c4c7c5;
+  --sx-color-tertiary-container: #e0e7ff; /* Tailwind indigo-100 */
+  --sx-color-on-tertiary-container: #312e81; /* Tailwind indigo-900 */
+  
+  /* Surface and background colors */
+  --sx-color-surface: #ffffff;
+  --sx-color-surface-dim: #f8fafc; /* Tailwind slate-50 */
+  --sx-color-surface-bright: #ffffff;
+  --sx-color-on-surface: #0f172a; /* Tailwind slate-900 */
+  --sx-color-surface-container: #f1f5f9; /* Tailwind slate-100 */
+  --sx-color-surface-container-low: #f8fafc; /* Tailwind slate-50 */
+  --sx-color-surface-container-high: #e2e8f0; /* Tailwind slate-200 */
+  --sx-color-background: #ffffff;
+  --sx-color-on-background: #0f172a; /* Tailwind slate-900 */
+  
+  /* Outline and utility colors */
+  --sx-color-outline: #94a3b8; /* Tailwind slate-400 */
+  --sx-color-outline-variant: #cbd5e1; /* Tailwind slate-300 */
   --sx-color-shadow: #000;
-  --sx-color-surface-tint: #6750a4;
+  --sx-color-surface-tint: #3b82f6; /* Tailwind blue-500 */
   --sx-color-neutral: var(--sx-color-outline);
   --sx-color-neutral-variant: var(--sx-color-outline-variant);
 
-  // internally defined colors, not belonging to the material design spec
-  --sx-internal-color-gray-ripple-background: #e0e0e0;
-  --sx-internal-color-light-gray: #fafafa;
-  --sx-internal-color-text: #000;
+  /* Internal colors */
+  --sx-internal-color-gray-ripple-background: #e2e8f0; /* Tailwind slate-200 */
+  --sx-internal-color-light-gray: #f8fafc; /* Tailwind slate-50 */
+  --sx-internal-color-text: #0f172a; /* Tailwind slate-900 */
 }
 
 .is-dark {
-  --sx-color-primary: #d0bcff;
-  --sx-color-on-primary: #371e73;
-  --sx-color-primary-container: #4f378b;
-  --sx-color-on-primary-container: #eaddff;
-  --sx-color-secondary: #ccc2dc;
-  --sx-color-on-secondary: #332d41;
-  --sx-color-secondary-container: #4a4458;
-  --sx-color-on-secondary-container: #e8def8;
-  --sx-color-tertiary: #efb8c8;
-  --sx-color-on-tertiary: #492532;
-  --sx-color-tertiary-container: #633b48;
-  --sx-color-on-tertiary-container: #ffd8e4;
-  --sx-color-surface: #141218;
-  --sx-color-surface-dim: #141218;
-  --sx-color-surface-bright: #3b383e;
-  --sx-color-on-surface: #e6e1e5;
-  --sx-color-surface-container: #211f26;
-  --sx-color-surface-container-low: #1d1b20;
-  --sx-color-surface-container-high: #2b2930;
-  --sx-color-background: #141218;
-  --sx-color-on-background: #e6e1e5;
-  --sx-color-outline: #938f99;
-  --sx-color-outline-variant: #444746;
+  /* Primary colors - blue based */
+  --sx-color-primary: #93c5fd; /* Tailwind blue-300 */
+  --sx-color-on-primary: #1e3a8a; /* Tailwind blue-900 */
+  --sx-color-primary-container: #1d4ed8; /* Tailwind blue-700 */
+  --sx-color-on-primary-container: #dbeafe; /* Tailwind blue-100 */
+  
+  /* Secondary colors - slate/gray based */
+  --sx-color-secondary: #94a3b8; /* Tailwind slate-400 */
+  --sx-color-on-secondary: #0f172a; /* Tailwind slate-900 */
+  --sx-color-secondary-container: #334155; /* Tailwind slate-700 */
+  --sx-color-on-secondary-container: #f1f5f9; /* Tailwind slate-100 */
+  
+  /* Tertiary colors - indigo based */
+  --sx-color-tertiary: #a5b4fc; /* Tailwind indigo-300 */
+  --sx-color-on-tertiary: #312e81; /* Tailwind indigo-900 */
+  --sx-color-tertiary-container: #4f46e5; /* Tailwind indigo-600 */
+  --sx-color-on-tertiary-container: #e0e7ff; /* Tailwind indigo-100 */
+  
+  /* Surface and background colors */
+  --sx-color-surface: #0f172a; /* Tailwind slate-900 */
+  --sx-color-surface-dim: #1e293b; /* Tailwind slate-800 */
+  --sx-color-surface-bright: #334155; /* Tailwind slate-700 */
+  --sx-color-on-surface: #f8fafc; /* Tailwind slate-50 */
+  --sx-color-surface-container: #1e293b; /* Tailwind slate-800 */
+  --sx-color-surface-container-low: #0f172a; /* Tailwind slate-900 */
+  --sx-color-surface-container-high: #334155; /* Tailwind slate-700 */
+  --sx-color-background: #0f172a; /* Tailwind slate-900 */
+  --sx-color-on-background: #f8fafc; /* Tailwind slate-50 */
+  
+  /* Outline and utility colors */
+  --sx-color-outline: #64748b; /* Tailwind slate-500 */
+  --sx-color-outline-variant: #475569; /* Tailwind slate-600 */
   --sx-color-shadow: #000;
-  --sx-color-surface-tint: #d0bcff;
+  --sx-color-surface-tint: #93c5fd; /* Tailwind blue-300 */
 
-  // internally defined colors, not belonging to the material design spec
-  --sx-internal-color-text: #fff;
+  /* Internal colors */
+  --sx-internal-color-text: #f8fafc; /* Tailwind slate-50 */
 }
